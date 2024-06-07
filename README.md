@@ -8,3 +8,6 @@ sh ./runme.sh
 This link helped me fifure out how to run the bootstrap toolset after I figured out how to build it: https://hemslo.io/run-ebpf-programs-in-docker-using-docker-bpf/
 
 Follow the instructions here to build the bootstrap project: https://github.com/libbpf/libbpf-bootstrap
+
+
+Follow the instuctions here to build bpftool and the examples from the Liz Rice book: git@github.com:lizrice/learning-ebpf.git
