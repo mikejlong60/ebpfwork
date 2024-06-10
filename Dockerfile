@@ -6,8 +6,9 @@ RUN apt-get update && apt-get install -y \
     gcc \
     make \
     git \
+    iproute2 \
     libelf-dev \
-#    gcc-multilib \
+    file \
     build-essential \
     cmake \
     pkg-config \
@@ -16,28 +17,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /workspace
 
-
-
-# Use the latest CentOS image as the base
-#FROM rockylinux:9
-
-
-#run yum -y update
-
-#run dnf -y install clang libbpf elfutils-libelf elfutils-libelf-devel zlib-devel git vim
-# Install basic packages
-#RUN yum -y update && \
-#    yum -y install epel-release && \
-#    yum -y install \
-#    vim \
-#    wget \
-#    curl \
-#    git \
-#    net-tools && \
-#    yum clean all
-
-# Set the working directory
-#WORKDIR /root
+RUN unminimize
+RUN apt-get install man-db
 
 # Set the default command
 CMD ["/bin/bash"]
