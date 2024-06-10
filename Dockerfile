@@ -15,10 +15,9 @@ RUN apt-get update && apt-get install -y \
     vim \	
     libpcap-dev
 
+#RUN unminimize
+#RUN apt-get install man-db
 WORKDIR /workspace
-
-RUN unminimize
-RUN apt-get install man-db
 
 # Set the default command
 CMD ["/bin/bash"]
