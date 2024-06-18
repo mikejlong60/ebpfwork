@@ -1,4 +1,4 @@
-TARGETS = hello hello-func redirect
+TARGETS = hello hello-func redirect-free
 
 all: $(TARGETS)
 .PHONY: all
